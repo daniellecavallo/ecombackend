@@ -31,7 +31,17 @@ Product.init(
     stock: {
       type: DataTypes.INTEGER,
       allowNull: false,
+      defaultValue:20
+    },
+
+    catagory_id:{
+      type: DataTypes.INTEGER, 
+      allowNull: true,
+      references:{
+        model: "catagory",
+        key:"id"
       
+      }
     }
   },
   {
