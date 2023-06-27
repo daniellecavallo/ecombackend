@@ -34,11 +34,11 @@ Product.init(
       defaultValue:20
     },
 
-    catagory_id:{
+    category_id:{
       type: DataTypes.INTEGER, 
       allowNull: true,
       references:{
-        model: "catagory",
+        model: "category",
         key:"id"
       
       }
